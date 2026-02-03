@@ -85,6 +85,7 @@ section h3 {
   margin-top: 10px;
   padding-left: 20px;
   color: #555;
+  list-style: none;
 }
 
 .participants-list li {
@@ -92,7 +93,22 @@ section h3 {
   padding: 4px;
   background-color: #f0f0f0;
   border-radius: 3px;
-  list-style-type: disc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
 }
 
 .no-participants {
